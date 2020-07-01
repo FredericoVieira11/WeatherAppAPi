@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="City"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Country"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <EditText
+        android:id="@+id/edt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digit a city..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toTopOf="@+id/city"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <EditText
+        android:id="@+id/edt_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digit a country..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/country"
+        app:layout_constraintTop_toTopOf="@+id/country" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_country" />
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="City"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+
+    <TextView
+        android:id="@+id/txt_city_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toEndOf="@+id/txt_city"
+        app:layout_constraintTop_toTopOf="@+id/txt_city" />
+
+    <TextView
+        android:id="@+id/txt_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Weather"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_city" />
+
+    <TextView
+        android:id="@+id/txt_weather_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toEndOf="@+id/txt_weather"
+        app:layout_constraintTop_toTopOf="@+id/txt_weather" />
+
+    <TextView
+        android:id="@+id/txt_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Temperature"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_weather" />
+
+    <TextView
+        android:id="@+id/txt_temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/txt_temperature"
+        app:layout_constraintTop_toTopOf="@+id/txt_temperature" />
+
+    <TextView
+        android:id="@+id/txt_thermal_sensation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Thermal sensation"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temperature"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_thermal_sensation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_thermal_sensation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/txt_thermal_sensation"
+        app:layout_constraintTop_toTopOf="@+id/txt_thermal_sensation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
